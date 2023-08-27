@@ -29,11 +29,11 @@ const Activity = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container flex flex-col w-1/3 justify-center ">
       {contacts.map((contact) => (
         <div
           key={contact.id}
-          className={`contact-card ${contact.received ? "received" : ""}`}
+          className={`contact-card ${contact.received ? "received" : ""} `}
         >
           <div className="contact-info">
             <h2>{contact.name}</h2>

@@ -28,9 +28,8 @@ const WellWishers = () => {
   };
 
   return (
-    <div className="container mx-auto py-6">
-      <h1 className="text-3xl font-semibold mb-4">Contact Tracking Grid</h1>
-      <table className="table-auto w-full">
+    <div className="container mx-auto py-6 ">
+      <table className="table-auto w-full flex flex-col justify-center items-center">
         <thead>
           <tr>
             <th className="px-4 py-2">Name</th>
@@ -47,10 +46,10 @@ const WellWishers = () => {
                 contact.received ? "bg-green-100" : "bg-white"
               } hover:bg-blue-100`}
             >
-              <td className="border px-4 py-2">{contact.name}</td>
-              <td className="border px-4 py-2">{contact.email}</td>
-              <td className="border px-4 py-2">{contact.sentDate}</td>
-              <td className="border px-4 py-2">
+              <td className="border px-3 py-2">{contact.name}</td>
+              <td className="border px-3 py-2">{contact.email}</td>
+              <td className="border px-3 py-2">{contact.sentDate}</td>
+              <td className="border px-3 py-2">
                 {contact.received ? (
                   <span className="text-green-600">Received</span>
                 ) : (
