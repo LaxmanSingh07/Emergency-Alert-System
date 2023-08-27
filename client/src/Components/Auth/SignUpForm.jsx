@@ -31,7 +31,10 @@ function SignUpForm() {
   };
 
   return (
-    <form onSubmit={handleOnSubmit} className="flex w-full flex-col gap-y-4">
+    <form
+      onSubmit={handleOnSubmit}
+      className="flex w-full flex-col gap-y-4 justify-center items-center  bg-richblue-900 p-[24px] rounded-[8px]"
+    >
       <div className="flex gap-x-4">
         <label>
           <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
@@ -68,7 +71,7 @@ function SignUpForm() {
           />
         </label>
       </div>
-      <label className="w-full">
+      <label className="">
         <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
           Email Address <sup className="text-pink-200">*</sup>
         </p>

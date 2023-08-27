@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Profile from "../Profile";
 
 function Navbar() {
   return (
@@ -21,7 +22,9 @@ function Navbar() {
               </button>
             </Link>
           </div>
-          <div className=" bg-richblack-300 h-[50px] w-[50px] rounded-full"></div>
+          <div className=" bg-richblack-300 h-[50px] w-[50px] rounded-full">
+            <Profile />
+          </div>
         </div>
       </div>
     </div>

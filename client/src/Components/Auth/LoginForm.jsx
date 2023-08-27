@@ -22,7 +22,7 @@ function LoginForm() {
   return (
     <form
       onSubmit={handleOnSubmit}
-      className="flex w-full flex-col gap-y-4 mt-6"
+      className="flex w-full flex-col gap-y-4 mt-6 justify-center items-center bg-richblue-900 p-[24px] rounded-[8px]"
     >
       <label>
         <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
