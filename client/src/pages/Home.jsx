@@ -79,7 +79,7 @@ function Home() {
           <Activity />
           <WellWishers />
         </div>
-        <AddButton onClick={openModal} />
+        {!isModalOpen && <AddButton onClick={openModal} />}
         <Adduser isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </div>
