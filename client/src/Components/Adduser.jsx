@@ -17,7 +17,7 @@ const Adduser = ({ isOpen, onClose }) => {
   }
 
   return (
-    <div className="modal-overlay">
+    <div className="flex  items-center justify-center mt-[5rem] mb-[5rem]">
       <div className="modal-content">
         <h2 className="text-xl font-semibold mb-4">Add Emergency Contact</h2>
         <form onSubmit={handleSubmit}>
